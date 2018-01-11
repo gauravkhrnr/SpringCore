@@ -1,0 +1,10 @@
+package com.component;
+
+import org.springframework.context.annotation.ComponentScans;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScans("com.component")
+public class AppConfig {
+
+}

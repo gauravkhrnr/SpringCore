@@ -1,0 +1,33 @@
+package com.pack;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import org.springframework.context.annotation.EnableLoadTimeWeaving;
+import org.springframework.stereotype.Component;
+
+
+@Entity
+@Table(name="emp1")
+public class Employee {
+	
+	private int id;
+	private String name="gaurav";
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	
+//	
+//	@Override
+//	public String toString() {
+//		
+//		return name +(++count);
+//	}
+}

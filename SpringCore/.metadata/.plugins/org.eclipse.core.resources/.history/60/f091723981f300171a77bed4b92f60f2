@@ -1,0 +1,17 @@
+package com.pack;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Component;
+
+@Component("application")
+public class Application {
+
+	@Resource(name="employee")
+	private Employee employee;
+	
+	@Override
+    public String toString() {
+        return "Application [user=" + user + "]";
+    }
+}

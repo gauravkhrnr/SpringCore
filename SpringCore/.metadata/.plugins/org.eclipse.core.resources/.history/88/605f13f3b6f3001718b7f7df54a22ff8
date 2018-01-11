@@ -1,0 +1,26 @@
+package com.pack.entity;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.pack.Employee;
+import com.pack.config.MsqlConfig;
+import com.pack.service.EmployeeService;
+
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MsqlConfig.class);
+
+		EmployeeService service = context.getBean(EmployeeService.class);
+		
+		service.add(new Employee(1, "Gaurav"));
+		service.add(new Employee(2, "Radhe"));
+
+		// Employee application2 = (Employee) context.getBean("emp");
+		// System.out.println(application2.toString());
+	}
+
+}

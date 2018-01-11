@@ -1,0 +1,8 @@
+package com.pack.service;
+
+import com.pack.Employee;
+
+public interface EmployeeService {
+
+	void add(Employee employee)
+}

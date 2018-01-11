@@ -1,0 +1,16 @@
+package com.pack;
+
+public class Employee {
+
+	private String name;
+	
+	public Employee(String name) {
+		
+		System.out.println("Initialiase");
+		this.name = name;
+	}
+	public void display() {
+		
+		System.out.println(name);
+	}
+}

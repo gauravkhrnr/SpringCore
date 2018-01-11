@@ -1,0 +1,12 @@
+package com.pack.config;
+
+import org.omg.CORBA.Environment;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+@Configuration
+@PropertySource("")
+public class MsqlConfig {
+
+	private Environment env;
+}

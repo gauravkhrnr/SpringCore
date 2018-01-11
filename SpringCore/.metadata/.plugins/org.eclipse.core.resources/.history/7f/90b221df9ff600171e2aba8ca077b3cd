@@ -1,0 +1,15 @@
+package com.pack;
+
+public class Employee {
+
+	private String name="gaurav";
+	
+	public Employee(String name) {
+		
+		this.name = name;
+	}
+	public void display() {
+		
+		System.out.println(name);
+	}
+}

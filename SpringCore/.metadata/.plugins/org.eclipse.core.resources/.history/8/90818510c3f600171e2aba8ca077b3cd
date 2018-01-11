@@ -1,0 +1,21 @@
+package com.component;
+
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Component;
+
+@Component
+//@Lazy
+public class Employee {
+
+	private String name;
+	
+	public Employee(String name) {
+		
+		System.out.println("Initialise");
+		this.name = name;
+	}
+	public void display() {
+		
+		System.out.println(name);
+	}
+}

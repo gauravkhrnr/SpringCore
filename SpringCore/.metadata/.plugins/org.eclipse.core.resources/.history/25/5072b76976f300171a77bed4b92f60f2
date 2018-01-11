@@ -1,0 +1,10 @@
+package com.pack;
+
+import javax.annotation.Resource;
+
+@Resource(name="applicatioi")
+public class Application {
+
+	@Resource(name="employee")
+	private Employee employee;
+}

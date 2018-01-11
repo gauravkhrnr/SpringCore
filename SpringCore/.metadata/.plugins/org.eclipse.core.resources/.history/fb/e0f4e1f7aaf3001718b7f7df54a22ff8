@@ -1,0 +1,16 @@
+package com.pack.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+
+@Configuration
+@Import(value= {AppConfig.class})
+public class AppConfig2 {
+
+	@Bean(name="app")
+	public AppConfig get() {
+		
+		return new AppConfig(); 
+	}
+}

@@ -1,0 +1,21 @@
+package com.pack.dao;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.pack.Employee;
+
+@Repository
+public class EmployeeDaoImpl implements EmployeeDao{
+
+	@Autowired
+	private SessionFactory sessionFactory;
+	
+	
+	public void add(Employee employee) {
+		// TODO Auto-generated method stub
+		sessionFactory.getCurrentSession().save(employee)
+	}
+
+}

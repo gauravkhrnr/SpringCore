@@ -1,0 +1,22 @@
+package com.pack;
+
+import javax.annotation.Resource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("application")
+public class Application {
+	
+	private Employee employee;
+	
+	@Autowired
+	public public Application() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+    public String toString() {
+        return ""+employee;
+    }
+}

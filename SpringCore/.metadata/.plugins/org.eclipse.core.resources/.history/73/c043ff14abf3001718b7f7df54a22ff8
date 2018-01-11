@@ -1,0 +1,22 @@
+package com.pack;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+
+import com.pack.config.AppConfig;
+import com.pack.config.AppConfig2;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		AbstractApplicationContext context = new AnnotationConfigApplicationContext(AppConfig2.class);
+		
+		AppConfig application1 = context.getBean(Employee.class);
+		System.out.println(application1.toString());
+//		Employee application2 = (Employee) context.getBean("emp");
+//		System.out.println(application2.toString());
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.pack;
+
+import org.springframework.context.annotation.Bean;
+
+public class AppConfig {
+
+	@Bean
+	public Employee getEmployee() {
+		
+		return new Employee("name");
+	}
+}

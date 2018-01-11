@@ -1,0 +1,9 @@
+package com.pack.dao;
+
+import com.pack.Employee;
+
+public interface EmployeeDao {
+
+	void add(Employee employee);
+	
+}

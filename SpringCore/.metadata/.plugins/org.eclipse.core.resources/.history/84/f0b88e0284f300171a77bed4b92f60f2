@@ -1,0 +1,20 @@
+package com.pack;
+
+import javax.annotation.Resource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
+@Component("application")
+public class Application {
+	
+
+	private Employee employee;
+	Employee employee;
+	
+	@Override
+    public String toString() {
+        return ""+employee;
+    }
+}

@@ -1,0 +1,24 @@
+package com.pack;
+
+import org.springframework.stereotype.Component;
+
+
+public class Employee {
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	private String name="gaurav";
+	
+	
+	@Override
+	public String toString() {
+		
+		return name;
+	}
+}

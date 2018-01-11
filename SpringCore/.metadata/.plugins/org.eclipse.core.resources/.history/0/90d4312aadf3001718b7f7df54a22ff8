@@ -1,0 +1,29 @@
+package com.pack;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import javax.sql.DataSource;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+
+import com.pack.config.AppConfig;
+import com.pack.config.AppConfig2;
+import com.pack.config.MsqlConfig;
+
+public class Test {
+
+	public static void main(String[] args) throws SQLException {
+		// TODO Auto-generated method stub
+
+		AbstractApplicationContext context = new AnnotationConfigApplicationContext(MsqlConfig.class);
+		
+		DataSource dataSource = (DataSource) context.getBean("db");
+		Connection con = dataSource.getConnection();
+		System.out.println(con);
+//		Employee application2 = (Employee) context.getBean("emp");
+//		System.out.println(application2.toString());
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.pack.config;
+
+import javax.annotation.Resource;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
+
+import com.pack.Employee;
+
+@Configuration
+@ComponentScan("com.pack")
+public class AppConfig {
+
+	
+}
